@@ -1,0 +1,19 @@
+.aggregator-cont {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: #080808;
+
+  .header-cont{
+    width: 100%;
+    background-color: #121318;
+    padding: 1rem 2rem;
+  }
+
+  .main-cont {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}

@@ -1,0 +1,23 @@
+<section class="converter">
+  <form class="input-cont" [formGroup]="convertForm">
+    <div class="card">
+      <label for="first-amount">Amount:</label>
+      <input id="first-amount" formControlName="firstAmount" (input)="convert()">
+      <select formControlName="firstCurrency" (change)="convert()">
+        <option value="UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+    <div>=</div>
+    <div class="card">
+      <label for="second-amount">Amount:</label>
+      <input id="second-amount" formControlName="secondAmount" (input)="convert()">
+      <select formControlName="secondCurrency" (change)="convert()">
+        <option value="UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+  </form>
+</section>

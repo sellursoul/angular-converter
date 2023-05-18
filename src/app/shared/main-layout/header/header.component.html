@@ -1,0 +1,16 @@
+<section class="header">
+  <h1>UAH Aggregator</h1>
+  <div class="monitoring-cont">
+    <div *ngFor="let element of data" class="card">
+      <div>{{element.base_ccy}} / {{element.ccy}}</div>
+      <div class="actions">
+        <p>Buy</p>
+        <p>Sell</p>
+      </div>
+      <div class="price">
+        <p>{{element.buy | currency: 'UAH '}}</p>
+        <p>{{element.sale| currency: 'UAH '}}</p>
+      </div>
+    </div>
+  </div>
+</section>
